@@ -35,5 +35,5 @@ geth --help
             "timestamp": "0x00"
         }
 
-![geth version](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth_init.png)
+![geth init](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth_init.png)
 
