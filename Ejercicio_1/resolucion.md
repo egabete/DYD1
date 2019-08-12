@@ -6,4 +6,4 @@ https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubunt
 -- Una vez instalemos todo podremos ver la version instalada ejecutando el comando
 geth --help
 
-![geth version](geth_version.png)
+![geth version](Ejercicio_1/img/geth_version.png)
