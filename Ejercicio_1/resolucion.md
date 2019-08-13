@@ -37,3 +37,35 @@ geth --help
 
 ![geth init](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth_init.png)
 
+- Utilizamos eel comando 'geth account new' para crear una cuenta en el nodo.
+
+![geth init](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth_init.png)
+
+- También podemos hacerlo, iniciando la consola con el comanto 'geth console'
+
+![geth init](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth_init.png)
+
+- y ejecutando el comando 'personal.newAccount()' con el que generamos una nueva cuenta en la blockchain.
+
+![geth init](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth_init.png)
+
+- Luego seteamos una de las cuentas como coinbase utilizando el comando 'geth --etherbase '0xE841a546949D768234471dA3A38458238736F9D4''
+
+
+
+- Iniciamos el nodo con el comando 'geth'
+
+![geth](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth.png)
+
+
+- 
+
+
+
+
+
+
+
+
+
+
