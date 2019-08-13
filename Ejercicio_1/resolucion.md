@@ -51,14 +51,15 @@ geth --help
 
 - Luego seteamos una de las cuentas como coinbase utilizando el comando 'geth --etherbase '0xE841a546949D768234471dA3A38458238736F9D4''
 
+- Iniciamos la consola y validamos que la cuenta configurada es correcta usando el comando 'eth.coinbase'
+
+- Luego iniciamos el minado en el nodo con el comando 'miner.start' desde la consola:
 
 
-- Iniciamos el nodo con el comando 'geth'
-
-![geth](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth.png)
 
 
-- 
+
+- Finalmente paramos el minado con el comando 'miner.stop' y comprobamos el saldo en la cuenta con el comando 'eth.getBalance(eth.coinbase)'
 
 
 
