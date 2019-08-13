@@ -1,5 +1,13 @@
 ## Ejericio 1
 
+#Enunciado
+Construya y configure su propia blockchain a partir de un archivo génesis que usted mismo debe definir. Se recomienda el uso del cliente Geth.
+1. Cree una cuenta mediante el cliente Geth.
+2. Consiga su propio Ether a partir de la minería.
+
+****
+#Resolución
+
 - Instalar el cliente GETH y sus dependencias siguiendo las instrucciones del siguiente link:
 https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu
 
