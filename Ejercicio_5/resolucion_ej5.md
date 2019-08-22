@@ -12,6 +12,8 @@ sin utilizar herramientas que obtengan automáticamente los identificadores.
 
 ==============
 
+### Resolucion
+
 El proceso para obtener los identificadores de una funcion manualmente, está definido en la documentación de solidity indica que el ID del metodo está dado por los primeros 4 bytes del hash Keccak del la forma ASCII de la firma de la funcion, la cual esta definida por: nombredelafuncion(tipoParametro,tipoParametro)
 
 - Siguiendo esta definición para nuestro primer caso tenemos la siguiente funcion:
