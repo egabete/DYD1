@@ -35,7 +35,7 @@ Una vez en la posisión correcta, procedemos a ejecutar el comando, sin embargo 
 Para esto cambiamos la versión en el archivo del contrato para que pueda ser ejecutada por el compilador.
 Finalmentee, volvemos a ejeecutar el comando y esta vez si obtenemos la información correspondiente:
 
-![ejecucion_compilador](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/ejecucion_compilado.png)
+![ejecucion_compilador](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/ejecucion_compilador.png)
 
 
 ### Punto 2
