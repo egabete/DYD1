@@ -25,7 +25,7 @@ Antes de comenzar debemos conectarnos a la red Rinkeby, para eso usamos el coman
 
 Segundo debemos conectarnos a la consola de geth, pero no al a que habiamos generado originalmente, sino a la que nos conecta con la blockchain de Rinkeby, para eso debemos explorar donde se esta guardando la blockchain de manera local y buscar el archivo `geth.ipc` correspondiente en mi caso en la ruta que se muestra en la imagen:
 
-![geth rinkeby](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/geth_ipc_rinkeby.png)
+![geth rinkeby](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/geth_ipc.png)
 
 Una vez ya listos con acceso a la red, comenzamos a trabajar:
 
@@ -41,7 +41,7 @@ Referencia: https://github.com/ethereum/go-ethereum/wiki/Management-APIs#admin_n
 
 Para obtener la cantidad de peers a los que actualmente estoy conectado lo puedo obtenere utilizando el comando `web3.net.peerCount`, en nuestro caso solo 2 al momento del ejercicio: 
 
-![web3_net_peer_count](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/web3_net_peer_count.png)
+![web3_net_peer_count](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/web3_net_peerCount.png)
 
 Rerencia: https://github.com/ethereum/wiki/wiki/JavaScript-API#web3netpeercount
 
