@@ -10,6 +10,7 @@ Obtenga:
 
 
 ==================
+
 Previo a iniciar los ejercicios necesitamos instalar el compilador de solidity, como se indica en la referencia.
 Para esto usamos los siguientes comandos para usar el gestor de paquetes de ubuntu:
 
