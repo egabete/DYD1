@@ -20,6 +20,7 @@ sudo apt-get install solc
 ~~~
 
 Una vez con el compilador instalado podemos comenzar
+Se agrega en la carpeta el archivo `contrato_ejemplo_storedata.sol`
 
 ### Punto 1
 
@@ -36,4 +37,25 @@ Finalmentee, volvemos a ejeecutar el comando y esta vez si obtenemos la informac
 
 ![ejecucion_compilador](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/ejecucion_compilado.png)
 
+
+### Punto 2
+
+Para obtener el identificador de las funciones vamos a utilizar otra opcion del compilador: `--hashes`
+
+![help_hashes](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/help_hashes.png)
+
+Lo ejecutamos y obtenemos eel siguiente resultado:
+
+![hashes_ejecucion](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/hashes_ejecucion.png)
+
+
+### Punto 3
+
+Para obtener la estimación de Gas, nuevamente vamos usar una opcion del compilador: `--gas`
+
+![help_gas](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/help_hashes.png)
+
+Lo ejecutamos y obtenemos eel siguiente resultado:
+
+![gas_ejecucion](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/hashes_ejecucion.png)
 
