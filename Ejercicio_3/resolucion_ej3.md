@@ -21,11 +21,11 @@ hash del bloque actual de éstos.
 
 Antes de comenzar debemos conectarnos a la red Rinkeby, para eso usamos el comando `geth --rinkeby`
 
-![geth rinkeby](https://github.com/egabete/DYD1/blob/master/Ejercicio_2/img/geth_rinkeby.png)
+![geth rinkeby](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/geth_rinkeby.png)
 
 Segundo debemos conectarnos a la consola de geth, pero no al a que habiamos generado originalmente, sino a la que nos conecta con la blockchain de Rinkeby, para eso debemos explorar donde se esta guardando la blockchain de manera local y buscar el archivo `geth.ipc` correspondiente en mi caso en la ruta que se muestra en la imagen:
 
-![geth rinkeby](https://github.com/egabete/DYD1/blob/master/Ejercicio_2/img/geth_ipc_rinkeby.png)
+![geth rinkeby](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/geth_ipc_rinkeby.png)
 
 Una vez ya listos con acceso a la red, comenzamos a trabajar:
 
@@ -33,7 +33,7 @@ Una vez ya listos con acceso a la red, comenzamos a trabajar:
 
 PAra obtener el address correspondiente al bloque genesis, sin usar la funcion `getBlock()` podemos usar la funciona `admin.nodeInfo`, donde podemos ver en el campo "Genesis" del JSON que nos devuelve, la address correspondiente al bloque genesis.
 
-![admin_nodeIndo](https://github.com/egabete/DYD1/blob/master/Ejercicio_2/img/admin_nodeInfo.png)
+![admin_nodeIndo](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/admin_nodeInfo.png)
 
 Referencia: https://github.com/ethereum/go-ethereum/wiki/Management-APIs#admin_nodeinfo
 
@@ -41,7 +41,7 @@ Referencia: https://github.com/ethereum/go-ethereum/wiki/Management-APIs#admin_n
 
 Para obtener la cantidad de peers a los que actualmente estoy conectado lo puedo obtenere utilizando el comando `web3.net.peerCount`, en nuestro caso solo 2 al momento del ejercicio: 
 
-![web3_net_peer_count](https://github.com/egabete/DYD1/blob/master/Ejercicio_2/img/web3_net_peer_count.png)
+![web3_net_peer_count](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/web3_net_peer_count.png)
 
 Rerencia: https://github.com/ethereum/wiki/wiki/JavaScript-API#web3netpeercount
 
@@ -49,7 +49,7 @@ Rerencia: https://github.com/ethereum/wiki/wiki/JavaScript-API#web3netpeercount
 
 Para obtener los datos de los peers a los que nos encontramos conectados utilizamos el comando `admin.peers` y nos devuelve un JSON con los datos de cada uno de los nodos:
 
-![admin_peers](https://github.com/egabete/DYD1/blob/master/Ejercicio_2/img/admin_peers.png)
+![admin_peers](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/admin_peers.png)
 
 Referencia: https://github.com/ethereum/go-ethereum/wiki/Management-APIs#admin_peers
 
