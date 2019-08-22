@@ -54,5 +54,23 @@ Para obtener los datos de los peers a los que nos encontramos conectados utiliza
 Referencia: https://github.com/ethereum/go-ethereum/wiki/Management-APIs#admin_peers
 
 #### Punto 4
+Para agregar un bootnode tenemos que usar la funcion `admin.addPeer` pero para esto necesitamos la referencia a un bootnode, en formato enode.
+Para eso encontramos un enode de la red rinkeby en la siguiente referencia (https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) que aùn no tenemos registrada: `"enode://a24ac7c5484ef4ed0c5eb2d36620ba4e4aa13b8c84684e1b4aab0cebea2ae45cb4d375b77eab56516d34bfbd3c1a833fc51296ff084b770b94fb9028c4d25ccf@52.169.42.101:30303" `
+
+Una vez con esta información procedemos a agregar el bootnode:
+
+![admin_addPeer](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/admin_addPeer.png)
+
+Una vez lo agregamos nos devuelve `true` y a continuación validamos con los comandos anteriormente utilizados que se haya agregado correctamente:
+
+![new_ammount_peers](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/new_ammount_peers.png)
+
+![details_of_peers](https://github.com/egabete/DYD1/blob/master/Ejercicio_3/img/details_of_peers.png)
+
+
+Referencias: 
+- https://github.com/ethereum/go-ethereum/wiki/Connecting-to-the-network
+- https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go (for list of bootnodes)
+
 
 
