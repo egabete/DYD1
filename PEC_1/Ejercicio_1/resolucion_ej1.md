@@ -14,7 +14,7 @@ https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubunt
 - Una vez instalemos todo podremos ver la version instalada ejecutando el comando
 `geth --version`
 
-![geth version](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth_version.png)
+![geth version](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/geth_version.png)
 
 - Creamos el archivo genesis segun se indica en https://github.com/ethereum/go-ethereum
 
@@ -43,40 +43,40 @@ https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubunt
             "timestamp": "0x00"
         }
 
-![geth init](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/geth_init.png)
+![geth init](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/geth_init.png)
 
 - Utilizamos el comando `geth account new` para crear una cuenta en el nodo.
 
-![accountnew](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/accountnew.png)
+![accountnew](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/accountnew.png)
 
 - También podemos hacerlo, iniciando la consola con el comanto `geth console`
 
-![console](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/console.png)
+![console](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/console.png)
 
 - y ejecutando el comando `personal.newAccount()` con el que generamos una nueva cuenta en la blockchain.
 
-![personal.newAccount](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/personal_newaccount.png)
+![personal.newAccount](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/personal_newaccount.png)
 
 - Luego seteamos una de las cuentas como coinbase utilizando el comando `geth --etherbase '0xE841a546949D768234471dA3A38458238736F9D4'`
 
 - Iniciamos la consola y validamos que la cuenta configurada es correcta usando el comando `eth.coinbase`
 
-![eth.accounts](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/ethaccounts.png)
+![eth.accounts](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/ethaccounts.png)
 
 - Luego iniciamos el minado en el nodo con el comando `miner.start` desde la consola:
 
-![miner.start](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/minerstart.png)
+![miner.start](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/minerstart.png)
 
 - y vemos como se minan los bloques:
 
-![minado](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/minado_block1to5.png)
+![minado](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/minado_block1to5.png)
 
 
-![minado](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/minado_block152to157.png)
+![minado](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/minado_block152to157.png)
 
 - Finalmente paramos el minado con el comando `miner.stop` y comprobamos el saldo en la cuenta con el comando `eth.getBalance(eth.coinbase)`
 
-![minado](https://github.com/egabete/DYD1/blob/master/Ejercicio_1/img/ethgetbalance.png)
+![minado](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/ethgetbalance.png)
 
 ******
 

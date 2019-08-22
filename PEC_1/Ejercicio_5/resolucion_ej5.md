@@ -33,7 +33,7 @@ Nota: Aqui tuvimos que cambiar el tipo dado que en la documentación se establec
 
 `27b57fcc13dafc8e83ae46798da0c4c32ac0b86c1f24ef37538b0fc8b50875f8`
 
-![Keccak_sumvalues](https://github.com/egabete/DYD1/blob/master/Ejercicio_5/img/Keccak_sumvalues.png)
+![Keccak_sumvalues](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_5/img/Keccak_sumvalues.png)
 
 - Finalmente obtenemos los primeros 4 bytes del hash, lo que nos deja con el siguiente numero como el identificador de la funcion:
 
@@ -43,20 +43,20 @@ A continuación repetimos el procedimiento para cada uno de los casos solicitado
 
 - function getGasDetails() public payable{}
 
-![Keccak_getGasDetails](https://github.com/egabete/DYD1/blob/master/Ejercicio_5/img/Keccak_getGasDetails.png)
+![Keccak_getGasDetails](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_5/img/Keccak_getGasDetails.png)
 
 ** Identificador: 3d86f4af
 
 - function __callback(bytes32 id, string memory result) public{}
 
-![Keccak_callback](https://github.com/egabete/DYD1/blob/master/Ejercicio_5/img/Keccak_callback.png)
+![Keccak_callback](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_5/img/Keccak_callback.png)
 
 ** Identificador: 27dc297e
 
 - function abr(uint8 _a, address _address) internal{}
 Se renombra con iniciales a "ega" (Esteban Gabrriel Abete)
 
-![Keccak_ega](https://github.com/egabete/DYD1/blob/master/Ejercicio_5/img/Keccak_ega.png)
+![Keccak_ega](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_5/img/Keccak_ega.png)
 
 ** Identificador: 4dd43b4e
 
@@ -82,4 +82,4 @@ contract comprobaciones {
 }
 ~~~
 
-![comprobaciones](https://github.com/egabete/DYD1/blob/master/Ejercicio_5/img/comprobaciones.png)
+![comprobaciones](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_5/img/comprobaciones.png)
