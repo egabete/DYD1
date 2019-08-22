@@ -23,6 +23,17 @@ Una vez con el compilador instalado podemos comenzar
 
 ### Punto 1
 
+Para obtenere los operation codes del contrato, revisamos la ayuda del compilador con la opcion `--help` y encontramos la opcion `--opcodes`.
 
+Ahora para ejecutar el compilador nos posicionamos en la carpeta donde tenemos el archivo del contrato para poder ejecutarlo. 
+
+![help_y_carpeta](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/help_y_carpeta.png)
+
+
+Una vez en la posisión correcta, procedemos a ejecutar el comando, sin embargo nos devuelve un error por la versión del compilador.
+Para esto cambiamos la versión en el archivo del contrato para que pueda ser ejecutada por el compilador.
+Finalmentee, volvemos a ejeecutar el comando y esta vez si obtenemos la información correspondiente:
+
+![ejecucion_compilador](https://github.com/egabete/DYD1/blob/master/Ejercicio_4/img/ejecucion_compilado.png)
 
 
