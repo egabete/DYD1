@@ -1,6 +1,7 @@
 # PEC 2
 ## EJERCICIO 2
 
+### INSTALACION IPFS
 - Para poder realizar el ejercicio primero debemos instalar IPFS siguiendo las indicaciones del siguiente link:
 https://docs.ipfs.io/guides/guides/install/
 
@@ -21,3 +22,19 @@ https://docs.ipfs.io/guides/guides/install/
 
 6. Como ultimo paso tenemos la validación de que la inicialización fue correcta, ya que visitamos la web local creada por la instalación e inicialización del daemon:
 ![web_local](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/ipfs_web_local.png)
+
+
+### Preparacion ejemplo truffle box
+
+- Elejí el truffle box "webpapck" que viene con la Dapp de ejemplo llamada Metacoin.
+- Para esto iniciamos en un directorio el truffle box con el comoando `truffle unbox webpack`
+
+![unbox_webpack](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/unbox_webpack.png)
+
+- Luego compile y migre los smart contracts a la blockchain, que ya tenia funcionando en Ganache, con los comandos `truffle compile` y `truffle migrate`
+
+![compile_migrate](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/compile_migrate.png)
+
+- Luego probe la aplicaciòn ejecutando el servidor local web con el comando `npm run dev`
+
+![running_dapp](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/running_dapp.png)
