@@ -33,27 +33,27 @@
 
 2. Generé una nueva carpeta limpia para guardar la información de la blockchain y luego procedi a iniciarla con el comando `geth --datadir ./new_blockchain init genesis.json`
 
-![newblockchain_init](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_init.png)
+![newblockchain_init](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/newblockchain_init.png)
 
 3. Luego generamos 2 cuentas con el comando `geth --datadir ./new_blockchain account new`. Por default la primera fue seteada como coinbase y luego iniciamos la consola con el comando `geth --datadir ./new_blockchain console`
 
-![new_blockchain_console](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/new_blockchain_console.png)
+![newblockchain_console](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/newblockchain_console.png)
 
 4. Una vez iniciada la consola comprobamos la creación de las 2 cuentas con el comando `eth.accounts` e iniciamos el minado, con el comando `miner.start(1)`, para conseguir ethers para poder hacer la transferencia.
 
-![neweblockchain_accounts_miner](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_accounts_miner.png)
+![newblockchain_accounts_miner](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/newblockchain_accounts_miner.png)
 
 5. Detenemos el minado con el comando `miner.stop()` y validamos si ya tenemos saldo para realizar la transferencia con el comando `eth.getBalance(eth.accounts[0])`
 
-![neweblockchain_balance](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_balance.png)
+![newblockchain_balance](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/newblockchain_balance.png)
 
 6. Con el minado detenido, ejecutamos la transaccion y validamos el saldo, sin embargo no vemos ningun cambio debido a que el minado está detenido y no se ha agregado la transaccion a ningún bloque, por lo que tampoco fue ejecutado el comando en la EVM para efectuar la transaccion entre las cuentas. Previo a la transaccion debimos desbloquear la cuenta con el comando `personal.unlockAccount(eth.accounts[0],"password")`, siendo "password" la contraseña utilizada para crear la cuenta.
 
-![neweblockchain_transaccion](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_balance.png)
+![newblockchain_transaccion](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/newblockchain_balance.png)
 
 7. Finalmente reiniciamos el minado y volvemos a ejecutar una transaccion. Ahora al validar el salldo podemos ver que es de 2 ETH, lo cual corresponde a las 2 transacciones realizadas.
 
-![neweblockchain_transaccion2](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_balance.png)
+![neweblockchain_transaccion2](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/newblockchain_balance.png)
 
 
 # Resolucion Punto 2
