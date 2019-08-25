@@ -72,5 +72,5 @@ Utilizamos el hash de la carpeta src `QmPotFoSF352TPibuAAaPjq12wpHyMhFDXXju3PqMd
 
 ![petshop_ipfs_browser](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/petshop_ipfs_browser.png)
 
-
+Podemos ver la DAPP funcionando y conectado a metamask para la accion "Adopt"
 
