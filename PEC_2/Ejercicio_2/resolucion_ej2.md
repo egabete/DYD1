@@ -41,6 +41,8 @@ https://docs.ipfs.io/guides/guides/install/
 ![running_dapp](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/running_dapp.png)
 
 ====
+### Resolucion ejercicio
+
 - Ya con la aplicacion funcionando, ele próximo paso sería subir rla carpeta de la Dapp a IPFS. Para que solo subir una carpeta a IPFS movi el archivo `MetaCoin.json` a la carpera `app/src` y cambiar el path desde el cual se lo importa, en el archivo `index.js`.
 
 Aqui mostramos el arbol final de la carpeta general y en particular la de la carpera src que es la que vamos a publicar en IPFS:
