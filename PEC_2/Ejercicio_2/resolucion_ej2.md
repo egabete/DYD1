@@ -50,4 +50,26 @@ Aqui mostramos el arbol final de la carpeta general y en particular la de la car
 
 - Una vez tenemos la carpeta lista, pasamos al paso de subirla a IPFS. Para esto necesitamos primero iniciar el demonio de IPFS y luego agregar la carpeta a ipfs de manera recursiva para que agregue todos los archivos y carpetas dentro. Esto lo hacemos con los comandos `ipfs daemon` en una terminal, y mientras se ejecuta el demonio navegamos hasta la carpeta que queremos subir y utilizamos el comando `ipfs add -r`
 
-Desafortunadamente, no he podido hacer funcionar este ejemplo debido a una dependencia en el archivo 
+Desafortunadamente, no he podido hacer funcionar este ejemplo debido a una dependencia en el archivo `index.js` en esta linea : `import Web3 from "web3";` He intentato por distiintos medios pero no he podido. 
+Mientras intentaba resolver el inconveniente, revisè el còdigo del ejemplo del petshop y encontre que no tenía esta dependencia por lo que decidí probar si con está aplicación lo podía hacer funcionar en IPFS.
+
+Renombre la carpeta del ejemplo de metacoin y agregue la carpeta del ejemplo de pet-shop quedando asi el arbol general:
+
+![final_folder_trie2](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/final_folder_trie2.png)
+
+Dentro del arbol de carpetas de pet-shop generé un carpeta especial con lo que subiría a IPFS en `pet_shop_example/dist`
+
+![petshop_dist](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/petshop_dist.png)
+
+Un vez hecho esto subimos el códifo a ipfs de la misma forma que antes con el comando 
+`ipfs add -r ./dist`
+
+![petshop_ipfs_add](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/petshop_ipfs_add.png)
+
+Ahora vamos a revisar si la Dapp fue correctamente publicada y si funciona correctamente accediendo a los archivos que están alojados en IPFS desde el browser con Metamask:
+
+Utilizamos el hash de la carpeta src `QmPotFoSF352TPibuAAaPjq12wpHyMhFDXXju3PqMd9zE3` la cual es la que contiene el `index.html`
+
+![petshop_ipfs_browser](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/petshop_ipfs_browser.png)
+
+
