@@ -36,5 +36,17 @@ https://docs.ipfs.io/guides/guides/install/
 ![compile_migrate](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/compile_migrate.png)
 
 - Luego probe la aplicaciòn ejecutando el servidor local web con el comando `npm run dev`
+![npm_run_dev](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/npm_run_dev.png)
 
 ![running_dapp](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/running_dapp.png)
+
+====
+- Ya con la aplicacion funcionando, ele próximo paso sería subir rla carpeta de la Dapp a IPFS. Para que solo subir una carpeta a IPFS movi el archivo `MetaCoin.json` a la carpera `app/src` y cambiar el path desde el cual se lo importa, en el archivo `index.js`.
+
+Aqui mostramos el arbol final de la carpeta general y en particular la de la carpera src que es la que vamos a publicar en IPFS:
+
+![final_folder_trie](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/final_folder_trie.png)
+
+
+- Una vez tenemos la carpeta lista, pasamos al paso de subirla a IPFS. Para esto necesitamos primero iniciar el demonio de IPFS y luego agregar la carpeta a ipfs de manera recursiva para que agregue todos los archivos y carpetas dentro. Esto lo hacemos con los comandos `ipfs daemon` en una terminal, y mientras se ejecuta el demonio navegamos hasta la carpeta que queremos subir y utilizamos el comando `ipfs add -r`
+
