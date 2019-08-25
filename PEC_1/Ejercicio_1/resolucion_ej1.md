@@ -78,15 +78,3 @@ https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubunt
 
 ![minado](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_1/img/ethgetbalance.png)
 
-******
-
-
-
-
-
-
-
-
-
-
-

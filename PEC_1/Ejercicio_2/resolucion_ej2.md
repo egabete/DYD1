@@ -7,35 +7,56 @@
 
 # Resolucion Punto 1
 
-- Teniendo ya nuestra blockchain, procedemos a generar una nueva cuenta con el comando `geth account new`
+- Al querer realizar la transferencia de Ether esto no fue posible por lo que despues de intentar resolver el problema de la blockchain iniciada, procedi a generar una nueva blockchain.
+1. Generè un nuevo archivo genesis:
 
-![geth account new2](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/gethaccountnew2.png)
+~~~
+{
+    "config": {
+      "chainId": 2018,
+      "homesteadBlock": 0,
+      "eip155Block": 0,
+      "eip158Block": 0
+    },
+  
+    "alloc"      : {},
+    "coinbase"   : "0x0000000000000000000000000000000000000000",
+    "difficulty" : "0x400",
+    "extraData"  : "",
+    "gasLimit"   : "0x2fefd8",
+    "nonce"      : "0x0000000000000042",
+    "mixhash"    : "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "timestamp"  : "0x00"
+  }
+~~~ 
 
-Como podemos ver hemos generado una nueva cuenta, la cual tiene la siguiente direccion publica: 0x58aA86f0a91fA138F3deADbc854Fb3977269dF5c
+2. Generé una nueva carpeta limpia para guardar la información de la blockchain y luego procedi a iniciarla con el comando `geth --datadir ./new_blockchain init genesis.json`
 
-Con el comando `geth account list` podemos ver todas las cuentas que se han creado:
+![newblockchain_init](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_init.png)
 
-![geth account list](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/gethaccountlist.png)
+3. Luego generamos 2 cuentas con el comando `geth --datadir ./new_blockchain account new`. Por default la primera fue seteada como coinbase y luego iniciamos la consola con el comando `geth --datadir ./new_blockchain console`
 
-Podemos tambien validar el saldo de cada una de las cuentas, iniciando la consola y utilizando el comando `eth.balance`:
+![new_blockchain_console](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/new_blockchain_console.png)
 
-![eth.balance](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/ethbalance.png)
+4. Una vez iniciada la consola comprobamos la creación de las 2 cuentas con el comando `eth.accounts` e iniciamos el minado, con el comando `miner.start(1)`, para conseguir ethers para poder hacer la transferencia.
 
-Podemos ver que la cuenta utilizada para minar tiene un saldo de 820 ETH
+![neweblockchain_accounts_miner](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_accounts_miner.png)
 
-![eth.balance](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/fromweitoether.png)
+5. Detenemos el minado con el comando `miner.stop()` y validamos si ya tenemos saldo para realizar la transferencia con el comando `eth.getBalance(eth.accounts[0])`
 
-y el resto tienen 0.
+![neweblockchain_balance](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_balance.png)
 
-Con está informaciión lo que nos planteamos es hacer una transferencia de 1 ETH desde la cuenta coinbase con saldo positivo `0xE841a546949D768234471dA3A38458238736F9D4`, hacia la cuenta creada en el ejercicio `0x58aA86f0a91fA138F3deADbc854Fb3977269dF5c`.
-Para esto vamos a usar el comando `eth.sendTransaction`, pero primero necesitamos desbloquear la cuenta de emision con el comando `personal.unlockAccount`
+6. Con el minado detenido, ejecutamos la transaccion y validamos el saldo, sin embargo no vemos ningun cambio debido a que el minado está detenido y no se ha agregado la transaccion a ningún bloque, por lo que tampoco fue ejecutado el comando en la EVM para efectuar la transaccion entre las cuentas. Previo a la transaccion debimos desbloquear la cuenta con el comando `personal.unlockAccount(eth.accounts[0],"password")`, siendo "password" la contraseña utilizada para crear la cuenta.
+
+![neweblockchain_transaccion](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_balance.png)
+
+7. Finalmente reiniciamos el minado y volvemos a ejecutar una transaccion. Ahora al validar el salldo podemos ver que es de 2 ETH, lo cual corresponde a las 2 transacciones realizadas.
+
+![neweblockchain_transaccion2](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_1/Ejercicio_2/img/neweblockchain_balance.png)
 
 
-eth.sendTransaction({from: '0xE841a546949D768234471dA3A38458238736F9D4', to: '0x58aA86f0a91fA138F3deADbc854Fb3977269dF5c', value: web3.toWei(1, "ether")})
-
-Punto incompleto !!
-
-# Resolucion Punto2
+# Resolucion Punto 2
 
 Ya con el entorno de truffle montado en el ejercicio del pet-shop iniciamos primero Ganache 
 
