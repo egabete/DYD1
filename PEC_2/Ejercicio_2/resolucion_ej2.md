@@ -50,3 +50,4 @@ Aqui mostramos el arbol final de la carpeta general y en particular la de la car
 
 - Una vez tenemos la carpeta lista, pasamos al paso de subirla a IPFS. Para esto necesitamos primero iniciar el demonio de IPFS y luego agregar la carpeta a ipfs de manera recursiva para que agregue todos los archivos y carpetas dentro. Esto lo hacemos con los comandos `ipfs daemon` en una terminal, y mientras se ejecuta el demonio navegamos hasta la carpeta que queremos subir y utilizamos el comando `ipfs add -r`
 
+Desafortunadamente, no he podido hacer funcionar este ejemplo debido a una dependencia en el archivo 
