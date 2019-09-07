@@ -19,6 +19,7 @@
     publicResolver address: 0x5d20cf83cb385e06d2f2a892f9322cd4933eacdc (line 1314)
     ~~~
 
+
 - Una vez incluimos estos cambios guardamos el archivo como `ensutils-testnet-rinkeby.js` para evitar inconvenientes.
 
   ![ensutils_file](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_1/img/ensutils_file.png)

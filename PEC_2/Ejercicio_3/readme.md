@@ -1,7 +1,7 @@
-# PEC 3
-## EJERCICIO 2
+# PEC 2
+## EJERCICIO 3
 
-### PASO 1 - Instalar Swarm
+### PASO 1
 
 - Instalamos *SWARM* con el comando `sudo apt-get install ethereum-swarm`
 
