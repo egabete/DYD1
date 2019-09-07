@@ -9,10 +9,9 @@
 
 - Creamos una nueva cuenta en Rinkeby y luego iniciamos SWARM, pasandole la cuenta geneerada:
 
-![geth_account_new](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/geth_account_new.png)
-
-
 ![new_account_rinkeby](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/new_account_rinkeby.png)
+
+![swarm_rinkeby_start](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_rinkeby_start.png)
 
 - Ahora confirmamos que SWARM está arriba accediendo a `localhot:8500` a través del browser.
 
