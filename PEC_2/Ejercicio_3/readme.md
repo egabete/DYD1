@@ -28,7 +28,7 @@
 - Para subir la carpeta vamos a utilizar las siguientes opciones:
     - `up` --> para hacer el upload
     - `--recursive` --> para hacer el upload de manera recursiva del contenido del directorio
-    - `--defaultpath` --> indicamos cual queremos que sea lo que se referencie cuando llamemos al hash que se va a generar de la carpeta.
+    - `--defaultpath` --> indicamos que queremos que sea lo que se referencie cuando llamemos al hash que se va a generar de la carpeta.
     - `--encrypt` --> para hacer el upload de manera encryptada
 
  ![swarm_upload](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_upload.png)
@@ -37,11 +37,11 @@
 
   ![swarm_web_local](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_web_local.png)
 
-  ![swarm_web_link1](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_link1.png)
+  ![swarm_web_link1](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_web_link1.png)
 
-  ![swarm_web_link2](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_link2.png)
+  ![swarm_web_link2](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_web_link2.png)
 
     - También podemos ver el archivo subido en el SWARM Gateway:
 
-  ![swarm_web_uploaded](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_uploaded.png)
+  ![swarm_web_uploaded](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_3/img/swarm_web_uploaded.png)
 
