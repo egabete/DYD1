@@ -14,10 +14,10 @@
 
 - Luego debemos descargar el archivo `ensutils-testnet.js`. Este archivo viene configuradon para la red Ropsten, por lo que para trabajar con la red Rinkeby, debemos modificar lo siguiente:
 
-~~~
-contract address: 0xe7410170f87102df0055eb195163a03b7f2bff4a (line 220)
-publicResolver address: 0x5d20cf83cb385e06d2f2a892f9322cd4933eacdc (line 1314)
-~~~
+    ~~~
+    contract address: 0xe7410170f87102df0055eb195163a03b7f2bff4a (line 220)
+    publicResolver address: 0x5d20cf83cb385e06d2f2a892f9322cd4933eacdc (line 1314)
+    ~~~
 
 - Una vez incluimos estos cambios guardamos el archivo como `ensutils-testnet-rinkeby.js` para evitar inconvenientes.
 
@@ -26,7 +26,7 @@ publicResolver address: 0x5d20cf83cb385e06d2f2a892f9322cd4933eacdc (line 1314)
 
 - Lo siguiente que teneemos que hacer es cargar el archivo mediante la consola de geth con el comando `loadScript('/home/esteban/Downloads/ensutils-testnet-rinkeby.js')`.
 
-Obtenemos true como respuesta y a continuación probamos que funcione correctamente con 2 nombres de dominio `.test` : `estebanabete` y el otro `edentity`
+- Obtenemos true como respuesta y a continuación probamos que funcione correctamente con 2 nombres de dominio `.test`: `estebanabete` y el otro `edentity`
 Para esto utilizamos el comando `testRegistrar.expiryTimes()` al cual le pasamos como parámetro el SHA3 del nombre del dominio como vemos en la imagen:
 
   ![ensutils_load](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_1/img/ensutils_load.png)
