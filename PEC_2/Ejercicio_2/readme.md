@@ -2,8 +2,7 @@
 ## EJERCICIO 2
 
 ### INSTALACION IPFS
-- Para poder realizar el ejercicio primero debemos instalar IPFS siguiendo las indicaciones del siguiente link:
-https://docs.ipfs.io/guides/guides/install/
+- Para poder realizar el ejercicio primero debemos instalar IPFS siguiendo las indicaciones del siguiente link: https://docs.ipfs.io/guides/guides/install/
 
 1. Descargamos el archivo para la instalación:
 ![download](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_2/img/download.png)
