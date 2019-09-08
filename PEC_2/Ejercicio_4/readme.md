@@ -13,7 +13,7 @@
 
     3.   Cargar el archivo `ensutils-testnet-rinkeby.js`. Para este punto usamos el comando `loadScript('/home/esteban/Downloads/ensutils-testnet-rinkeby.js')`. En este punto también chequeamos que esta correctamente conectado consultando el estado de un dominio registrado previamente en la PEC "estebanabete.test" con el comando `new Date(testRegistrar.expiryTimes(web3.sha3('estebanabete.test')).toNumber()*1000)`.
     
-    ![load_scrirpt](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/load_scrirpt.png)
+    ![load_scrirpt](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/load_script.png)
     
     ![check_domain](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/check_domain.png)
     
@@ -27,14 +27,14 @@
         - la opcion `--ens-api` nos indica ...
         - la direccion `test:0xe7410170f87102df0055eb195163a03b7f2bff4a@http://127.0.0.1:30303` es la direccion del contrato de la testnet Rinkeby donde se encuentra el ens.
 
-    ![swarm_ensapi_start](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/filename.png)
+    ![swarm_ensapi_start](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/swarm_ensapi_start.png)
 
 ### PASO 2
 -   Ahora que tenemos los elementos inicializados y preparados podemos comenzar a realizar la práctica. Primero subimos la carpeta con la DAPP. La misma carpeta que para el Ejericio_1.
 Para esto vamos a usar el siguiente comando:
 `swarm --recursive --defaultpath /home/esteban/Documents/Disenio-y-Desarrollo/PEC_2/Ejercicio_2/pet_shop_example/dist/index.html up --encrypt /home/esteban/Documents/Disenio-y-Desarrollo/PEC_2/Ejercicio_2/pet_shop_example/dist/`
 
-  ![swarp_folder_upload](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/swarp_folder_upload.png)
+  ![swarm_folder_upload](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/swarm_folder_upload.png)
 
 - Ahora validamos si la aplicacion subio correctamente y podemos interactuar. Para esto además hemos activado Ganache con la blockchain del ejercicio anterior. (NOTA: para que funcione fue necesario actualizar las rutas de los assets de los archivos `index.html`, `app.js` y `pets.json`)
 
