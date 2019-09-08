@@ -34,7 +34,7 @@
 Para esto vamos a usar el siguiente comando:
 `swarm --recursive --defaultpath /home/esteban/Documents/Disenio-y-Desarrollo/PEC_2/Ejercicio_2/pet_shop_example/dist/index.html up --encrypt /home/esteban/Documents/Disenio-y-Desarrollo/PEC_2/Ejercicio_2/pet_shop_example/dist/`
 
-  ![swarm_folder_upload](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/swarm_folder_upload.png)
+  ![swarm   _folder_upload](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/swarm_folder_upload.png)
 
 - Ahora validamos si la aplicacion subio correctamente y podemos interactuar. Para esto además hemos activado Ganache con la blockchain del ejercicio anterior. (NOTA: para que funcione fue necesario actualizar las rutas de los assets de los archivos `index.html`, `app.js` y `pets.json`)
 
@@ -52,3 +52,9 @@ A este método como vemos se le pasan 3 parámetros:
 - el hash del contenido que queremos linkear al dominio
 - la cuenta con la que vamos a ejecutar la trasaccion.
 
+- A pesar de que no he recibido ningun en el proceso, al querer comprobar el funcionamiento del dominio el mismo arroja un error 404 "Manifest not found"
+
+  ![error_ens](https://github.com/egabete/Disenio-y-Desarrollo/blob/master/PEC_2/Ejercicio_4/img/error_ens.png)
+
+He investigado y lo que he encontrado no me ha llevado a ninguna solución.
+Lamentablemnte esta parte del ejercicio no he podido completarla.
